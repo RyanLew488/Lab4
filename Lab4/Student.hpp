@@ -4,12 +4,13 @@
 
 
 class Student : public Person {
+
 private:
 	double gpa;
 
 public:
-	student();
-	student(std::string name, double gpa);
+	Student();
+	Student(std::string name, double gpa);
 	double getgpa();
 	void setgpa(double gpa);
 	void setName(std::string name);

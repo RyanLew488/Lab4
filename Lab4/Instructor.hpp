@@ -8,8 +8,8 @@ private:
 	double rating;
 
 public:
-	instructor();
-	instructor(std::string name, double rating);
+	Instructor();
+	Instructor(std::string name, double rating);
 	void setName(std::string name);
 	std::string getName();
 	void setRating(double rating);

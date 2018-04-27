@@ -1,6 +1,6 @@
 #include "Building.hpp"
 
-Building::building() {
+Building::Building() {
 
 	name = "";
 	size = 1000.0;
@@ -8,7 +8,7 @@ Building::building() {
 
 }
 
-Building::building(std::string name, double size, std::string address) {
+Building::Building(std::string name, double size, std::string address) {
 
 	setName(name);
 	setSize(size);

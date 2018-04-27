@@ -1,6 +1,6 @@
 #include "Student.hpp"
 
-Student::student() {
+Student::Student() {
 
 	name = "";
 	gpa = 3.0;
@@ -8,7 +8,7 @@ Student::student() {
 
 }
 
-Student::student(std::string name, double gpa) {
+Student::Student(std::string name, double gpa) {
 
 	setName(name);
 	setgpa(gpa);

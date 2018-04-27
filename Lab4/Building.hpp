@@ -10,8 +10,8 @@ private:
 	std::string address;
 
 public:
-	building();
-	building(std::string name, double size, std::string address);
+	Building();
+	Building(std::string name, double size, std::string address);
 	void setName(std::string name);
 	void setSize(double size);
 	void setAddress(std::string address);

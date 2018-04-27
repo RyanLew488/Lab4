@@ -2,8 +2,8 @@
 #define UNIVERSITY_HPP
 #include <string>
 #include "Student.hpp"
-#include "Instructor.hpp"
 #include "Building.hpp"
+
 class University {
 
 private:
@@ -12,6 +12,8 @@ private:
 	Person* pPtr;
 
 public:
+	University();
+
 };
 
 

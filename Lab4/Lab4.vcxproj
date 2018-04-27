@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Building.hpp" />
+    <ClInclude Include="helperFunctions.hpp" />
     <ClInclude Include="Instructor.hpp" />
     <ClInclude Include="Person.hpp" />
     <ClInclude Include="Student.hpp" />
@@ -123,9 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Building.cpp" />
+    <ClCompile Include="helperFunctions.cpp" />
     <ClCompile Include="Instructor.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="Student.cpp" />
+    <ClCompile Include="University.cpp" />
+    <ClCompile Include="zoomMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

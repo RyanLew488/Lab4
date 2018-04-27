@@ -1,6 +1,6 @@
 #include "Instructor.hpp"
 
-Instructor::instructor() {
+Instructor::Instructor() {
 
 	name = "";
 	rating = 4.0;
@@ -8,19 +8,22 @@ Instructor::instructor() {
 	
 }
 
-Instructor::instructor(std::string name, double rating) {
+Instructor::Instructor(std::string name, double rating) {
 
+	setName(name);
+	setRating(rating);
+	age = rand() % 43;
 	
 
 }
 
-void setName(std::string name) {
+void Instructor::setName(std::string name) {
 
 	this->name = name;
 
 }
 
-std::string getName() {
+std::string Instructor::getName() {
 
 	return name;
 
