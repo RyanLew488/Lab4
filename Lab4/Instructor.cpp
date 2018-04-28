@@ -5,6 +5,7 @@ Instructor::Instructor() {
 	name = "";
 	rating = 4.0;
 	age = rand() % 43;
+	instructor = true;
 	
 }
 
@@ -13,7 +14,7 @@ Instructor::Instructor(std::string name, double rating) {
 	setName(name);
 	setRating(rating);
 	age = rand() % 43;
-	
+	instructor = true;
 
 }
 
@@ -44,4 +45,10 @@ void Instructor::do_work() {
 
 	std::cout << name << " graded papers for " << (rand() % 8) + 1 << " hours" << std::endl;
 
+}
+
+double Instructor::getgpa()
+{
+	//unused
+	return 0.0;
 }

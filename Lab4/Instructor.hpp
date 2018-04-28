@@ -15,6 +15,7 @@ public:
 	void setRating(double rating);
 	double getRating();
 	void do_work();
+	virtual double getgpa();
 
 };
 #endif // !INSTRUCTOR_HPP

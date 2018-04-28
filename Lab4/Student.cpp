@@ -5,6 +5,7 @@ Student::Student() {
 	name = "";
 	gpa = 3.0;
 	age = rand() % 31;
+	instructor = false;
 
 }
 
@@ -13,6 +14,7 @@ Student::Student(std::string name, double gpa) {
 	setName(name);
 	setgpa(gpa);
 	age = rand() % 31;
+	instructor = false;
 
 }
 
@@ -44,5 +46,11 @@ void Student::do_work() {
 	//rand will be seeded in main
 	std::cout << name << " did " << (rand() % 10) << " hours of homework " << std::endl;
 
+}
+
+double Student::getRating()
+{
+	//unused
+	return 0.0;
 }
  

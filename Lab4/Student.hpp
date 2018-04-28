@@ -16,6 +16,8 @@ public:
 	void setName(std::string name);
 	std::string getName();
 	void do_work();
+	virtual double getRating();
+
 };
 #endif // !STUDENT_HPP
 
