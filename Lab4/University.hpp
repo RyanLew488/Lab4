@@ -16,8 +16,11 @@ private:
 public:
 	University();
 	~University();
+	int getArraySize();
+	void printPName();
 	void getPersonInfo();
 	void getBuildingInfo();
+	void do_work(int choice);
 };
 
 

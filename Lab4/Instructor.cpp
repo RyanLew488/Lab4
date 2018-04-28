@@ -13,7 +13,7 @@ Instructor::Instructor(std::string name, double rating) {
 
 	setName(name);
 	setRating(rating);
-	age = rand() % 43;
+	age = 25 + rand() % 43;
 	instructor = true;
 
 }

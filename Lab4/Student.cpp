@@ -13,7 +13,7 @@ Student::Student(std::string name, double gpa) {
 
 	setName(name);
 	setgpa(gpa);
-	age = rand() % 31;
+	age = 18 + rand() % 13;
 	instructor = false;
 
 }

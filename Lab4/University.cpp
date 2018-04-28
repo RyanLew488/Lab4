@@ -41,6 +41,27 @@ University::~University() {
 	delete[] pArr;
 }
 
+int University::getArraySize()
+{
+	return maxSize;
+}
+
+void University::printPName() {
+		
+	for (int i = 0; i < maxSize; i++) {
+
+		std::cout << "[ " << i << " ] "; 
+		if (pArr[i]->getStatus()) {
+			std::cout << "(Instructor) ";
+		}
+		else {
+			std::cout << "(Student) ";
+		}
+		std::cout << pArr[i]->getName() << std::endl;
+
+	}
+}
+
 void University::getPersonInfo() {
 	std::cout << "---------- Info about students and faculty ----------\n";
 	for (int i = 0; i < maxSize; i++) {
@@ -64,4 +85,9 @@ void University::getBuildingInfo(){
 		std::cout << " Building Name: " << bArr[i]->getName() << " | Address: " << bArr[i]->getAddress() << " | Square Footage: " << bArr[i]->getSize();
 		std::cout << std::endl;
 	}
+}
+
+void University::do_work(int choice){
+
+	pArr[choice]->do_work();
 }
