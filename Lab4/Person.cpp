@@ -1,7 +1,7 @@
 #include "Person.hpp"
 
 void Person::do_work() {
-
+	//unused, pure virtual functinon.
 }
 
 std::string Person::getName() {

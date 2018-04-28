@@ -1,3 +1,10 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Header file for the University class, contains an array
+**				of Person pointers and an array of building pointers.
+*********************************************************************/
+
 #ifndef UNIVERSITY_HPP
 #define UNIVERSITY_HPP
 #include <string>

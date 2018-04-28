@@ -1,3 +1,10 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Implementation file for the university class it manually
+**				instantiates the elements for the two arrays.
+*********************************************************************/
+
 #include "University.hpp"
 
 University::University() {
@@ -6,6 +13,9 @@ University::University() {
 	maxSize = 10;
 	bArr = new Building*[maxSize];
 	pArr = new Person*[maxSize];
+
+
+	//Manually instantiating both building and Person objects
 
 	bArr[0] = new Building("Adams Building",11168,"606 SW 15th St, Corvallis OR, 97331");
 	bArr[1] = new Building("Ballard Extension Hall", 42250, "110 SW 26th St, Corvallis OR, 97331");
@@ -41,28 +51,36 @@ University::~University() {
 	delete[] pArr;
 }
 
-int University::getArraySize()
-{
+int University::getArraySize(){
+
 	return maxSize;
+
 }
+
+/*********************************************************************************
+** Prints out every element in the person array with their relevant information
+** chooses different functions based on whether the object is a student or instructor
+**********************************************************************************/
 
 void University::printPName() {
 		
 	for (int i = 0; i < maxSize; i++) {
 
 		std::cout << "[ " << i << " ] "; 
-		if (pArr[i]->getStatus()) {
-			std::cout << "(Instructor) ";
-		}
-		else {
-			std::cout << "(Student) ";
-		}
+		if (pArr[i]->getStatus()) {std::cout << "(Instructor) ";}
+		else {std::cout << "(Student) ";}
+
 		std::cout << pArr[i]->getName() << std::endl;
 
 	}
 }
 
+/*********************************************************************************
+** Prints out every element in the person array with their relevant information
+**********************************************************************************/
+
 void University::getPersonInfo() {
+
 	std::cout << "---------- Info about students and faculty ----------\n";
 	for (int i = 0; i < maxSize; i++) {
 		std::cout << " Name: " << pArr[i]->getName() << " | Age: " << pArr[i]->getAge();
@@ -78,16 +96,25 @@ void University::getPersonInfo() {
 
 }
 
+/*********************************************************************************
+** Prints out every element in the building array with their relevant information
+**********************************************************************************/
+
 void University::getBuildingInfo(){
 
 	std::cout << "---------- Facilities Information ----------\n";
+
 	for (int i = 0; i < maxSize; i++) {
-		std::cout << " Building Name: " << bArr[i]->getName() << " | Address: " << bArr[i]->getAddress() << " | Square Footage: " << bArr[i]->getSize();
+
+		std::cout << " Building Name: " << bArr[i]->getName() << " | Address: ";
+		std::cout << bArr[i]->getAddress() << " | Square Footage: " << bArr[i]->getSize();
 		std::cout << std::endl;
 	}
 }
 
+//Passes the users numerical choice into the individual objects do_work() member function.
 void University::do_work(int choice){
-
+	
 	pArr[choice]->do_work();
+
 }

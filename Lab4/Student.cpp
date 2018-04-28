@@ -1,3 +1,10 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Implementation file for the student class has unused
+**				functions of the instructor subclass so it can be instantiated.
+*********************************************************************/
+
 #include "Student.hpp"
 
 Student::Student() {
@@ -18,6 +25,9 @@ Student::Student(std::string name, double gpa) {
 
 }
 
+/**************************************************************************
+** Getters and setters for the member variables of the Student Class
+****************************************************************************/
 void Student::setName(std::string name) {
 	
 	this->name = name;
@@ -48,9 +58,8 @@ void Student::do_work() {
 
 }
 
-double Student::getRating()
-{
-	//unused
+double Student::getRating() {
+	//unused students should not have a rating.
 	return 0.0;
 }
  

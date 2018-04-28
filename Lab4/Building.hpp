@@ -1,3 +1,9 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Header file for the Building class.
+**				
+*********************************************************************/
 #ifndef BUILDING_HPP
 #define BUILDING_HPP
 #include <string>

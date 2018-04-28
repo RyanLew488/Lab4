@@ -4,8 +4,6 @@
 #include "University.hpp" //contains Student.hpp Instructor.hpp Building.hpp
 #include "helperFunctions.hpp"
 
-
-
 int main() {
 
 	srand(time(0));

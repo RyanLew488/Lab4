@@ -1,3 +1,8 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Implementation file for the Building class.				
+*********************************************************************/
 #include "Building.hpp"
 
 Building::Building() {
@@ -15,6 +20,9 @@ Building::Building(std::string name, double size, std::string address) {
 	setAddress(address);
 
 }
+/**************************************************************************
+** Getters and setters for the member variables of the Building Class
+****************************************************************************/
 
 void Building::setName(std::string name) {
 

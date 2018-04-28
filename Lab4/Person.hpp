@@ -1,3 +1,10 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Header file for the Person class, Person is a parent
+**				class no Person object should instantiated.
+*********************************************************************/
+
 #ifndef PERSON_HPP
 #define PERSON_HPP
 #include <string>

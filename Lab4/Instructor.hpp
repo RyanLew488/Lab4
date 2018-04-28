@@ -1,3 +1,10 @@
+/*********************************************************************
+** Author:Ryan Lew
+** Date: 4/28/2018
+** Description: Header file for the Instructor class, instructor is a subclass
+**				of Person.
+*********************************************************************/
+
 #ifndef INSTRUCTOR_HPP
 #define INSTRUCTOR_HPP
 #include "Person.hpp"
